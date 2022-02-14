@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lab_members",
+  "info": {
+    "singularName": "lab-member",
+    "pluralName": "lab-members",
+    "displayName": "Lab Member"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "EmailAddress": {
+      "type": "email"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Current": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "About": {
+      "type": "richtext"
+    },
+    "ProfileImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
